@@ -1,0 +1,73 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage{graphicx}		%Paquete para anexar fotos
+\usepackage[utf8]{inputenc}
+\usepackage[english,spanish]{babel}
+\usepackage{amsmath}		%Permite alinear ecuaciones
+\usepackage{amsfonts}
+\usepackage{amsthm}	%para poner el cuadrito qed
+\usepackage{amssymb}
+\usepackage[margin=2.5cm]{geometry}		%Establece el margen a 3cm
+\usepackage[doublespacing]{setspace}		%	espaciado por linea de 1.5
+%	\documentclass[twocolumn]{report}		%	pone dos columnas
+	
+
+\begin{document}
+
+\section{problema}
+	Por el divisor de voltaje, sabemos que:
+
+	$V_{R_1} = \displaystyle \frac{E}{R_T}R_1 = 4.93$v \\
+	$V_{R_2} = \displaystyle \frac{E}{R_T}R_2 = 2.31$v \\
+	$V_{R_3} = \displaystyle \frac{E}{R_T}R_3 = 2.76$v\\
+
+	así
+
+	$V_1 = 10$v \\
+	$V_2 = 5.07$v \\
+	$V_3 = 2.76$v \\
+
+\section{problema}
+
+	Igualando lo propuesto y despejando para $R_3$
+	\begin{align*}		
+		V_3 &= (3k2) (I) \\
+			&= \frac{(3k2)(10)}{3k2 + R_3} \\
+			&= 5
+	\end{align*}	
+	Al despejar, $R_3 = 3k2$.	
+
+\section{problema}
+	
+	$V_2 = 5v$, $V_3 = 3v$, $R_1 = R$
+
+	Por ley de Ohm
+	$I = \displaystyle \frac{E}{R_T}$ \\
+	Aplicando divisor de voltaje
+
+	$V_2 = \displaystyle \frac{E}{R_T}R = 5$ \\
+	$V_3 = 10 - V_2 - \displaystyle \frac{E}{R_T}R_2 = 3$ \\
+
+	Tenemos las ecuaciones
+
+	$IR_2 = 2$ \\
+	$IR = 5$ \\
+	donde
+	$R_2 = \displaystyle \frac{2}{5}R$ \\
+	sustituyendo en
+	$\displaystyle \frac{E}{R + \displaystyle \frac{2}{5}R + R_3} \displaystyle \frac{2}{5} R= 2$ \\ 
+	vemos que $R_3 = \displaystyle \frac{3}{5} R$
+
+\section {problema}
+	Por ley de Ohm, sabemos
+	$I_1 = \displaystyle \frac{V_s}{R_1} = 6m97A$ \\
+	Sea $R_z = \left(\displaystyle\sum_{n=2}^{4} \frac{1}{R_n}\right)^{-1} = 434.21 \Omega $
+	así, aplicando divisor de corriente, tenemos 
+
+	$I_2 = \dfrac{I_1R_z}{R_2} = 3m03 A$ \\
+	$I_3 = \dfrac{I_1R_z}{R_3} = 1m38 A$ \\
+	$I_4 = \dfrac{I_1R_z}{R_4} = 918\mu18 A$
+
+
+\end{document}
+

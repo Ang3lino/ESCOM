@@ -1,0 +1,123 @@
+
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage{graphicx}		%Paquete para anexar fotos
+\usepackage[utf8]{inputenc}
+\usepackage[english,spanish]{babel}
+\usepackage{amsmath, amsfonts, amsthm, amssymb, physics}  %Paquetes matematicos
+\usepackage{mathrsfs}
+\usepackage[margin=2cm]{geometry}	
+\usepackage{fancyhdr} %encabezados y pie de pagina
+\usepackage{multicol}  %columnas
+\usepackage{algpseudocode}	%Los 2 paquetes son para poner pseudocodigo 
+\usepackage{algorithm}
+\usepackage{listingsutf8}	%	Los dos paquetes son para citar codigo	
+
+% Paquetes neces. para la linea del tiempo																																																										
+\usepackage[TS1,T1]{fontenc}
+\usepackage{fourier, heuristica}
+\usepackage{array, booktabs}
+\usepackage[x11names]{xcolor}
+\usepackage{colortbl}
+\usepackage{caption}
+\DeclareCaptionFont{blue}{\color{LightSteelBlue3}}
+
+
+
+%\usepackage[doublespacing]{setspace}	%doble espaciado por linea
+
+%\usepackage[onehalfspacing]{setspace}		%	espaciado por linea de 1.5
+%	\documentclass[twocolumn]{report}		%	pone dos columnas
+
+%	======================================================================
+%	Permite poner pie de pagina
+	\pagestyle{fancy}
+	\fancyhf{}
+	\rhead{Ángel López Manríquez}
+	\lhead{Redes de computadoras}
+	\rfoot{Pagina \thepage}
+
+%	======================================================================
+%	Permite el anexo de teoremas, corolarios y lemas
+	\newtheorem{theorem}{Teorema}[section]
+	\newtheorem{corollary}{Corollary}[theorem]
+	\newtheorem{lemma}[theorem]{Lema}
+	
+	\theoremstyle{definition}
+	\newtheorem{definition}{Definición}[section]
+
+\newcommand{\foo}{\color{LightSteelBlue3}\makebox[0pt]{\textbullet}\hskip-0.5pt\vrule width 1pt\hspace{\labelsep}}
+
+
+%	======================================================================
+%	Portada
+\begin{document}
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.15\textwidth]{ipn.png}\par\vspace{1cm}
+	{\scshape\LARGE Escuela Superior de Cómputo \par}
+	\vspace{1cm}
+	{\scshape\Large Trabajos \par}
+	\vspace{1.5cm}
+	{\huge\bfseries REDES DE COMPUTADORAS \par}
+	\vspace{2cm}
+	{\Large\itshape Alumno: \\ López Manríquez Ángel  \par}
+	\vfill
+	profesor\par
+	Moreno Cervantes Axel Ernesto
+	\vfill
+
+% Bottom of the page
+	{\large \today\par}
+\end{titlepage}
+
+%	======================================================================
+	
+
+%	\begin{multicols}{2}
+	\begin{table}
+		\renewcommand\arraystretch{1.4}\arrayrulecolor{LightSteelBlue3}
+		\captionsetup{singlelinecheck=false, font=blue, labelfont=sc, labelsep=quad}
+		\caption{Linea del tiempo}\vskip -1.5ex
+		\begin{tabular}{@{\,}r <{\hskip 2pt} !{\foo} >{\raggedright\arraybackslash}p{5cm}}
+		\toprule
+		\addlinespace[1.5ex]
+			1950 & El comienzo de las primeras aplicaciones para internet \\
+			1972 & Inauguracion del ARPARNET \\
+			1977 & Se definen las especificaciones del correo electronico \\
+			1981 & Osborne 1 Portable Computer \\
+			1982 & Se establece el protocolo TCP/IP \\
+			1989 & Creacion de la WWW \\
+			1990 & Se creo el primer navegador web \\
+			1992 & Se crea servidor de audio y video \\
+			1992 & Comercializacion de la WWW \\
+			1994 & La web ya es lo segundo mas usado de internet \\
+			1998 & Microsoft ya entro a la internet \\ % 
+			2000 & El buscador ocupaba el primer lugar entre los usuarios del internet \\
+			2007 & Se incorpora el GPS a los moviles \\
+			2012 & Fluke networks introduce el primer software basado en un sensor WLAN  \\
+			2016 & El nuevo estandar Wi-fi 802.11ac se lanza al mercado ofreciendo una mayor velocidad de datos (100 Mbps)
+		\end{tabular}
+	\end{table}
+%	\end{multicols}
+
+
+	\section {ICANN}
+		La ICANN se encuentra en un proceso de transición hacia un enfoque de traducción de contenidos más integral y eficiente. Nuestro objetivo es ofrecer versiones de ICANN.org totalmente traducidas a los seis idiomas de las Naciones Unidas -- español inclusive -- en el transcurso de este año. Mientras tanto, hemos seleccionado algunos recursos útiles en español; desde ya, también pueden buscar contenido en español. 
+
+	\section {IANA}
+		Internet Assigned Numbers Authority (cuyo acrónimo es IANA) es la entidad que supervisa la asignación global de direcciones IP, sistemas autónomos, servidores raíz de nombres de dominio DNS y otros recursos relativos a los protocolos de Internet. Actualmente es un departamento operado por ICANN.
+
+		En sus inicios, IANA fue administrada principalmente por Jon Postel en el Instituto de Ciencias de la Información (ISI) de la Universidad del Sur de California (USC), en virtud de un contrato de USC/ISI con el Departamento de Defensa estadounidense, hasta que se creó la ICANN para asumir la responsabilidad bajo un contrato del Departamento de Comercio.
+
+	\section {Registros regionales de internet}
+		Un Registro Regional de Internet o Regional Internet Registry (RIR) es una organización que supervisa la asignación y el registro de recursos de números de Internet dentro de una región particular del mundo. Los recursos incluyen direcciones IP (tanto IPv4 como IPv6) y números de sistemas autónomos (para su uso en encaminamiento BGP).
+
+	\section {IPP}	
+		El proveedor de servicios de Internet (ISP, por la sigla en inglés de Internet service provider) es la empresa que brinda conexión a Internet a sus clientes. Un ISP conecta a sus usuarios a Internet a través de diferentes tecnologías como DSL, cablemódem, GSM, dial-up, etcétera.
+
+		\subsection {Historia} 
+			Originalmente, para acceder a Internet se necesitaba una cuenta universitaria o de alguna agencia del gobierno; que necesariamente tenía que estar autorizada. Internet comenzó a aceptar tráfico comercial a principios de la década de 1990, pero era demasiado limitada y en una cantidad mínima en comparación con la actualidad. 	
+
+\end{document}
+
